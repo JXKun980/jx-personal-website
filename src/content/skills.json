@@ -1,8 +1,0 @@
-{
-  "categories": [
-    { "title": "Languages", "color": "from-primary to-primary-light", "skills": ["TypeScript", "JavaScript", "Python", "C/C++", "Java", "SQL", "Rust"] },
-    { "title": "Frontend", "color": "from-accent to-accent-light", "skills": ["React", "Next.js", "Tailwind CSS", "HTML/CSS", "Framer Motion", "Redux"] },
-    { "title": "Backend & Cloud", "color": "from-neon-purple to-neon-pink", "skills": ["Node.js", "Express", "Django", "AWS", "Docker", "PostgreSQL", "MongoDB"] },
-    { "title": "Tools & Other", "color": "from-neon-blue to-accent", "skills": ["Git", "Linux", "CI/CD", "FPGA", "Embedded Systems", "Agile", "Figma"] }
-  ]
-}
