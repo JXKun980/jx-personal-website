@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { createReader } from '@keystatic/core/reader';
+import keystaticConfig from '../../keystatic.config';
+
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Education from '../components/Education';
+import Experience from '../components/Experience';
+import Skills from '../components/Skills';
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+
+const reader = createReader(process.cwd(), keystaticConfig);
+const profile = await reader.singletons.profile.read();
+
+const projects = (profile?.projects || []).map((p) => ({
+  title: p.title,
+  description: p.description,
+  tech: p.tech,
+  github: p.github || undefined,
+  live: p.live || undefined,
+  category: p.category,
+}));
+---
+
+<Layout title={`${profile?.name || 'John Doe'} | Portfolio`}>
+  <div class="min-h-screen bg-surface text-text font-sans">
+    <Navbar client:load initials={profile?.initials || 'JD'} />
+    <Hero
+      client:load
+      name={profile?.name || 'John Doe'}
+      tagline={profile?.tagline || ''}
+      heroGreeting={profile?.heroGreeting || "Hi, I'm"}
+      heroBadge={profile?.heroBadge || 'Welcome to my portfolio'}
+      scrollPrompt={profile?.scrollPrompt || 'Scroll to explore'}
+      socials={profile?.socials || []}
+    />
+    <About
+      client:visible
+      bio={profile?.bio || ''}
+      highlights={profile?.highlights || []}
+    />
+    <Education client:visible items={profile?.education || []} />
+    <Experience client:visible items={profile?.experience || []} />
+    <Skills client:visible categories={profile?.skills || []} />
+    <Projects client:visible items={projects} />
+    <Contact
+      client:visible
+      contactMessage={profile?.contactMessage || ''}
+      socials={profile?.socials || []}
+      location={profile?.location || ''}
+    />
+    <Footer client:visible name={profile?.name || 'John Doe'} />
+  </div>
+</Layout>

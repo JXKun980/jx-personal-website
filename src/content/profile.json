@@ -1,0 +1,236 @@
+{
+  "name": "Junxian Wang",
+  "initials": "JX",
+  "tagline": "M. Computer Science & B. Electrical Engineering · Problem Solver · Builder · Educator",
+  "heroGreeting": "Hi, I'm",
+  "heroBadge": "Welcome to my portfolio",
+  "scrollPrompt": "Scroll to explore",
+  "bio": "I'm a Computer Science and Electrical Engineering graduate with a deep passion for coding, technology, and science. I love to explore new things across software and hardware, and I find joy in tackling complex problems — breaking them down into digestible, logical pieces. Designing solutions that benefit others is what drives me, and I genuinely enjoy teaching and sharing knowledge. When I'm not coding, you'll find me on the badminton or tennis court, gaming, or lost in a good book.",
+  "location": "Melbourne, Victoria, Australia",
+  "contactMessage": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing. Feel free to reach out!",
+  "socials": [
+    {
+      "platform": "github",
+      "url": "https://github.com/johndoe",
+      "label": "GitHub"
+    },
+    {
+      "platform": "linkedin",
+      "url": "https://linkedin.com/in/johndoe",
+      "label": "LinkedIn"
+    },
+    {
+      "platform": "email",
+      "url": "mailto:email@junxian.wang",
+      "label": "Email"
+    }
+  ],
+  "highlights": [
+    {
+      "icon": "code",
+      "title": "Passionate Coder",
+      "description": "I thrive on logical puzzles and immerse myself in complex problem solving."
+    },
+    {
+      "icon": "cpu",
+      "title": "Tech Explorer",
+      "description": "Constantly exploring new frontiers in software, hardware, and science."
+    },
+    {
+      "icon": "users",
+      "title": "Educator",
+      "description": "I love breaking down hard concepts into logical chunks and teaching others."
+    },
+    {
+      "icon": "book",
+      "title": "Lifelong Learner",
+      "description": "Always curious, always growing — from circuits to code and beyond."
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.S. in Computer Science",
+      "school": "University of Technology",
+      "period": "2018 – 2022",
+      "details": [
+        "Focus on algorithms, data structures, and software engineering",
+        "Dean's List — multiple semesters",
+        "Senior capstone project in full-stack web application development"
+      ]
+    },
+    {
+      "degree": "B.S. in Electrical Engineering",
+      "school": "University of Technology",
+      "period": "2018 – 2022",
+      "details": [
+        "Specialization in embedded systems and digital signal processing",
+        "Hands-on experience with circuit design and FPGA programming",
+        "Research assistant in IoT and sensor systems lab"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "TechCorp Inc.",
+      "period": "2022 – Present",
+      "description": "Building scalable microservices and full-stack applications. Led migration of monolithic system to event-driven architecture, improving performance by 40%.",
+      "tech": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "AWS",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "title": "Software Engineering Intern",
+      "company": "Innovate Labs",
+      "period": "Summer 2021",
+      "description": "Developed internal dashboards and automated data pipelines. Collaborated with cross-functional teams to ship customer-facing features.",
+      "tech": [
+        "Python",
+        "Django",
+        "React",
+        "Docker"
+      ]
+    },
+    {
+      "title": "Undergraduate Research Assistant",
+      "company": "University IoT Lab",
+      "period": "2020 – 2022",
+      "description": "Designed and programmed embedded sensor systems for environmental monitoring. Published research on low-power communication protocols.",
+      "tech": [
+        "C/C++",
+        "FPGA",
+        "MQTT",
+        "Python"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Smart Home Dashboard",
+      "description": "Full-stack IoT dashboard for monitoring and controlling smart home devices in real time. Features live sensor data, automation rules, and responsive design.",
+      "category": "code",
+      "github": "https://github.com/johndoe/smart-home-dashboard",
+      "live": "https://smarthome.johndoe.dev",
+      "tech": [
+        "React",
+        "Node.js",
+        "MQTT",
+        "PostgreSQL",
+        "Docker"
+      ]
+    },
+    {
+      "title": "Algorithm Visualizer",
+      "description": "Interactive tool for visualizing sorting algorithms, pathfinding, and graph traversals. Built to help students understand data structures and algorithms.",
+      "category": "code",
+      "github": "https://github.com/johndoe/algo-visualizer",
+      "tech": [
+        "TypeScript",
+        "React",
+        "Canvas API",
+        "Framer Motion"
+      ]
+    },
+    {
+      "title": "Low-Power Sensor Network",
+      "description": "Designed and built a mesh network of environmental sensors using custom PCBs. Includes a web interface for data visualization and alerting.",
+      "category": "code",
+      "github": "https://github.com/johndoe/sensor-network",
+      "tech": [
+        "C++",
+        "PCB Design",
+        "LoRa",
+        "Python"
+      ]
+    },
+    {
+      "title": "Technical Blog & Tutorials",
+      "description": "A collection of in-depth articles on algorithms, system design, and embedded programming. Aimed at making complex topics accessible.",
+      "category": "other",
+      "live": "https://blog.johndoe.dev",
+      "tech": [
+        "Writing",
+        "Teaching",
+        "Technical Communication"
+      ]
+    },
+    {
+      "title": "Community Workshop Series",
+      "description": "Organized and led a series of workshops teaching high school students programming fundamentals, robotics, and web development.",
+      "category": "other",
+      "tech": [
+        "Public Speaking",
+        "Curriculum Design",
+        "Mentoring"
+      ]
+    },
+    {
+      "title": "Open Source Contributions",
+      "description": "Active contributor to multiple open-source projects including developer tools, documentation improvements, and bug fixes.",
+      "category": "other",
+      "github": "https://github.com/johndoe",
+      "tech": [
+        "Open Source",
+        "Collaboration",
+        "Code Review"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "title": "Languages",
+      "color": "from-primary to-primary-light",
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "C/C++",
+        "Java",
+        "SQL",
+        "Rust"
+      ]
+    },
+    {
+      "title": "Frontend",
+      "color": "from-accent to-accent-light",
+      "skills": [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "HTML/CSS",
+        "Framer Motion",
+        "Redux"
+      ]
+    },
+    {
+      "title": "Backend & Cloud",
+      "color": "from-neon-purple to-neon-pink",
+      "skills": [
+        "Node.js",
+        "Express",
+        "Django",
+        "AWS",
+        "Docker",
+        "PostgreSQL",
+        "MongoDB"
+      ]
+    },
+    {
+      "title": "Tools & Other",
+      "color": "from-neon-blue to-accent",
+      "skills": [
+        "Git",
+        "Linux",
+        "CI/CD",
+        "FPGA",
+        "Embedded Systems",
+        "Agile",
+        "Figma"
+      ]
+    }
+  ]
+}
