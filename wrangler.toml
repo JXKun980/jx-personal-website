@@ -1,0 +1,6 @@
+name = "jx-personal-website"
+compatibility_date = "2024-12-01"
+
+[[kv_namespaces]]
+binding = "CONTENT"
+id = "placeholder"

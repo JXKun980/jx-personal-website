@@ -1,0 +1,33 @@
+---
+export const prerender = false;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <div id="admin-root">
+      <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0f172a;color:#94a3b8;font-family:Inter,system-ui,sans-serif">
+        Loading admin panel...
+      </div>
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>
+
+<script>
+  import { createElement } from 'react';
+  import { createRoot } from 'react-dom/client';
+  import AdminPanel from '../components/admin/AdminPanel';
+
+  const root = createRoot(document.getElementById('admin-root')!);
+  root.render(createElement(AdminPanel));
+</script>
