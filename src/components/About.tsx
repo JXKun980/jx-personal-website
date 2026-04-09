@@ -30,9 +30,9 @@ export default function About({ bio, highlights }: Props) {
     <section id="about" className="py-32 px-6">
       <div className="max-w-6xl mx-auto" ref={ref}>
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.35 }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -43,9 +43,9 @@ export default function About({ bio, highlights }: Props) {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, delay: 0.2 }}
+          transition={{ duration: 0.35 }}
           className="relative p-8 md:p-12 rounded-2xl bg-surface-light/50 border border-surface-lighter/30 backdrop-blur-sm mb-16"
         >
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5" />
@@ -58,9 +58,9 @@ export default function About({ bio, highlights }: Props) {
             return (
               <motion.div
                 key={item.title}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 10 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: 0.3 + i * 0.1 }}
+                transition={{ duration: 0.3 }}
                 className="group p-6 rounded-2xl bg-surface-light/40 border border-surface-lighter/30 hover:border-accent/40 transition-all duration-300 hover:bg-surface-light/60"
               >
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">

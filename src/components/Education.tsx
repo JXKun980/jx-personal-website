@@ -21,9 +21,9 @@ export default function Education({ items }: Props) {
     <section id="education" className="py-32 px-6">
       <div className="max-w-5xl mx-auto" ref={ref}>
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.35 }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -38,9 +38,9 @@ export default function Education({ items }: Props) {
           {items.map((edu, i) => (
             <motion.div
               key={edu.degree}
-              initial={{ opacity: 0, x: i % 2 === 0 ? -60 : 60 }}
+              initial={{ opacity: 0, x: i % 2 === 0 ? -15 : 15 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.7, delay: 0.2 + i * 0.2 }}
+              transition={{ duration: 0.35, delay: i * 0.05 }}
               className={`relative flex flex-col md:flex-row items-start mb-12 ${
                 i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
               }`}

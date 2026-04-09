@@ -28,9 +28,9 @@ export default function Projects({ items }: Props) {
     <section id="projects" className="py-32 px-6">
       <div className="max-w-6xl mx-auto" ref={ref}>
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.35 }}
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -41,9 +41,9 @@ export default function Projects({ items }: Props) {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.3 }}
           className="flex justify-center gap-3 mb-12"
         >
           {[
@@ -70,10 +70,10 @@ export default function Projects({ items }: Props) {
             <motion.div
               key={project.title}
               layout
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
+              transition={{ duration: 0.3 }}
               className="group flex flex-col p-6 rounded-2xl bg-surface-light/40 border border-surface-lighter/30 hover:border-neon-purple/40 transition-all duration-300"
             >
               <div className="flex items-center justify-between mb-4">

@@ -22,9 +22,9 @@ export default function Experience({ items }: Props) {
     <section id="experience" className="py-32 px-6">
       <div className="max-w-5xl mx-auto" ref={ref}>
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.35 }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -38,9 +38,9 @@ export default function Experience({ items }: Props) {
           {items.map((exp, i) => (
             <motion.div
               key={exp.title + exp.company}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.2 + i * 0.15 }}
+              transition={{ duration: 0.3, delay: i * 0.05 }}
               className="group relative p-8 rounded-2xl bg-surface-light/50 border border-surface-lighter/30 hover:border-accent/40 transition-all duration-300"
             >
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

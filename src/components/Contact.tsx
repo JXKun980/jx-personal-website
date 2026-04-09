@@ -41,9 +41,9 @@ export default function Contact({ contactMessage, socials, location }: Props) {
     <section id="contact" className="py-32 px-6">
       <div className="max-w-4xl mx-auto text-center" ref={ref}>
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.35 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Let's{' '}
@@ -62,9 +62,9 @@ export default function Contact({ contactMessage, socials, location }: Props) {
                 href={link.href}
                 target={link.href.startsWith('http') ? '_blank' : undefined}
                 rel="noopener noreferrer"
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 8 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
+                transition={{ duration: 0.3 }}
                 whileHover={{ y: -3, scale: 1.02 }}
                 className="flex items-center gap-3 p-4 rounded-xl bg-surface-light/50 border border-surface-lighter/30 hover:border-accent/40 transition-all duration-300 group"
               >
