@@ -25,3 +25,6 @@ package-lock.json
 
 # jetbrains setting folder
 .idea/
+
+# wrangler local state
+.wrangler/
