@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import defaultProfile from '../content/profile.json';
 
+import AmbientBackground from '../components/AmbientBackground';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
@@ -34,7 +35,9 @@ const projects = (profile.projects || []).map((p) => ({
 ---
 
 <Layout title={`${profile.name} | Portfolio`}>
-  <div class="min-h-screen bg-surface text-text font-sans">
+  <div class="min-h-screen text-text font-sans">
+    <AmbientBackground client:load />
+    <div class="relative z-10">
     <Navbar client:load initials={profile.initials} />
     <Hero
       client:load
@@ -57,5 +60,6 @@ const projects = (profile.projects || []).map((p) => ({
       location={profile.location}
     />
     <Footer client:visible name={profile.name} />
+    </div>
   </div>
 </Layout>
