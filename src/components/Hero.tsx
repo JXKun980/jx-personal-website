@@ -57,7 +57,7 @@ export default function Hero({ name, tagline, heroGreeting, heroBadge, scrollPro
       ))}
 
       <div className="relative z-10 text-center px-6 max-w-4xl">
-        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
+        <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
           <span className="inline-block px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary-light text-sm font-medium mb-6">
             {heroBadge}
           </span>
@@ -65,7 +65,7 @@ export default function Hero({ name, tagline, heroGreeting, heroBadge, scrollPro
 
         <motion.h1
           className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight mb-6"
-          initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.05 }}
+          initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}
         >
           {heroGreeting}{' '}
           <span className="bg-gradient-to-r from-primary-light via-accent to-neon-purple text-transparent bg-clip-text">
@@ -75,14 +75,14 @@ export default function Hero({ name, tagline, heroGreeting, heroBadge, scrollPro
 
         <motion.p
           className="text-lg md:text-xl text-text-muted max-w-2xl mx-auto mb-8 leading-relaxed"
-          initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.1 }}
+          initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }}
         >
           {tagline}
         </motion.p>
 
         <motion.div
           className="flex items-center justify-center gap-4 mb-12"
-          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 0.15 }}
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4, delay: 0.6 }}
         >
           {socials.map((s) => {
             const Icon = iconMap[s.platform] || FiMail;
@@ -102,7 +102,7 @@ export default function Hero({ name, tagline, heroGreeting, heroBadge, scrollPro
           })}
         </motion.div>
 
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3, delay: 0.2 }}>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4, delay: 0.8 }}>
           <motion.a
             href="#about"
             className="inline-flex items-center gap-2 text-text-muted hover:text-accent transition-colors"
